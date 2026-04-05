@@ -45,12 +45,6 @@ Together, these two tracks provide both a *short-run* (market-based) and a *long
 - **Simulate a BRICS Currency Unit (UNIT)** index as a weighted composite of the five currency components (60% weight) and gold (40% weight), benchmarked from 2017.
 - **Build a Macroeconomic Vulnerability Index** for each BRICS nation using a multi-dimensional panel of indicators — inflation, GDP, public debt, energy import dependence, and international trade — to provide structural context for volatility findings.
 
-### Research Questions
-
-> *Can EGARCH-derived conditional volatility estimates provide a principled, data-driven basis for constructing stability-ranked currency weights in a BRICS Currency Unit, and what ordering and magnitude constraints do they imply for the basket optimiser?*
-
-> *Do macroeconomic vulnerabilities (fiscal stress, energy dependence, trade exposure) systematically align with or diverge from market-implied volatility rankings?*
-
 ---
 
 ## 3. Methodology
