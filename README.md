@@ -301,7 +301,6 @@ brics-egarch-volatility/
 | `data/macro/INDIA_macro.csv` | CSV | India: inflation, GDP, debt/GDP, energy imports, trade volume (1999–2023) |
 | `data/macro/RUSSIA_macro.csv` | CSV | Russia: inflation, GDP, debt/GDP, energy imports, trade volume (1999–2023) |
 | `data/macro/SOUTHAFRICA_macro.csv` | CSV | South Africa: inflation, GDP, debt/GDP, energy imports, trade volume (1999–2023) |
-| `data/macro/BRICS_Vulnerability_Index.xlsx` | Excel | Multi-sheet workbook: composite vulnerability index (0–1), pole scores, z-scores, methodology |
 
 ### Results — Tables
 
@@ -311,6 +310,8 @@ brics-egarch-volatility/
 | `results/tables/egarch_weights.csv` | Clean export of stability ranks and IV weights (%) for use in basket optimiser |
 | `results/tables/prefit_diagnostics.csv` | Jarque-Bera and ARCH-LM test statistics and p-values for each currency return series |
 | `results/tables/postfit_diagnostics.csv` | Post-fit Ljung-Box test results on standardised residuals ($z_t$) and squared residuals ($z_t^2$) |
+| `data/macro/BRICS_Vulnerability_Index.xlsx` | Excel | Multi-sheet workbook: composite vulnerability index (0–1), pole scores, z-scores, methodology |
+
 
 ### Results — Figures
 
