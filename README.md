@@ -229,7 +229,12 @@ brics-egarch-volatility/
 |   +-- raw/
 |   |   +-- fx_prices.csv                  <- Daily USD FX prices, 2017-2024 (Yahoo Finance)
 |   |   +-- gold_prices.csv                <- Daily COMEX Gold Futures prices (GC=F)
-|   |
+|   |   +-- macroeconomic_parameters
+|   |   |   +--SADCSV.csv                  <- Macroeconomic Parameter Data for South Africa
+|   |   |   +--RUSSIACSV.csv               <- Macroeconomic Parameter Data for Russia
+|   |   |   +--INDIACSV.csv                <- Macroeconomic Parameter Data for India
+|   |   |   +--CHINACSV.csv                <- Macroeconomic Parameter Data for China
+|   |   |   +--BRAZILCSV.csv               <- Macroeconomic Parameter Data for Brazil
 |   +-- processed/
 |   |   +-- fx_log_returns.csv             <- Daily log returns (%), all 5 currencies
 |   |
@@ -266,9 +271,10 @@ brics-egarch-volatility/
 |       +-- egarch_weights.csv             <- Stability rank and IV weights (clean export)
 |       +-- prefit_diagnostics.csv         <- JB and ARCH-LM test results (Step 2)
 |       +-- postfit_diagnostics.csv        <- Ljung-Box residual diagnostics (Step 4)
+|       +-- BRICS_Vulnerability_Index_Macroeconomic.xlsx (Macroeconomic Parameters Results)
 |
 +-- paper/
-    +-- final_report.pdf                   <- Research paper (to be added)
+    +-- final_report.pdf                   <- Research paper
 ```
 
 ---
