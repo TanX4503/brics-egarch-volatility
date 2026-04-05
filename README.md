@@ -1,7 +1,8 @@
 # BRICS Currency Unit — EGARCH Volatility Analysis
 
 > **Research Paper:** *Volatility Analysis of a Potential BRICS Currency*
-> **Model:** EGARCH(1,1) with Student-t errors · **Supplementary Layer:** Macroeconomic Vulnerability Index
+> **Model:** EGARCH(1,1) with Student-t errors · 
+> **Supplementary Layer:** Macroeconomic Vulnerability Index
 > **Authors:** Economics and Finance Association
 
 ---
