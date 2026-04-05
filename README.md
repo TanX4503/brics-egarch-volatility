@@ -147,7 +147,7 @@ brics-egarch-volatility/
 │   └── tables/                     # CSV outputs (runtime)
 │
 └── paper/
-    └── final_report.pdf
+    └── final_report.pdf (To be added)
 ```
 
 ## Dependencies
