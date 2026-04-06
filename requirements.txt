@@ -1,0 +1,26 @@
+# BRICS UNIT EGARCH Analysis — Python Dependencies
+# Tested on Python 3.9, 3.10, 3.11
+#
+# Install with:
+#   pip install -r requirements.txt
+
+# Core scientific stack
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# GARCH/EGARCH modelling
+arch>=6.2.0
+
+# Financial data
+yfinance>=0.2.36
+
+# Statistical diagnostics
+statsmodels>=0.14.0
+
+# Plotting
+matplotlib>=3.7.0
+
+# Notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
