@@ -1,9 +1,9 @@
 # BRICS Currency Unit — EGARCH Volatility Analysis
 
-> **Research Paper:** *Volatility Analysis of a Potential BRICS Currency*
+> **Research Paper:** *Stability and Weight Optimization of a Potential BRICS Currency: An EGARCH-Based Volatility Analysis*
 > **Model:** EGARCH(1,1) with Student-t errors · 
 > **Supplementary Layer:** Macroeconomic Vulnerability Index
-> **Authors:** Economics and Finance Association
+> **Authors:** 
 
 ---
 
@@ -317,10 +317,10 @@ brics-egarch-volatility/
 
 | File | Description |
 |---|---|
-| `results/figures/brics_conditional_vol.png` | Overlay of annualised conditional volatility for all 5 currencies (2017–2024) |
+| `results/figures/brics_conditional_vol.png` | Annualised conditional volatility for all 5 currencies (2017–2024) |
 | `results/figures/brics_stability_ranking.png` | Bar chart: mean conditional vol per currency, labelled with IV basket weights |
 | `results/figures/brics_unit_index.png` | Simulated UNIT index vs individual currency components and gold (normalised to 1.0) |
-| `results/figures/brics_diag_BRL.png` | 2×2 diagnostic grid for BRL: return series, conditional vol, ACF($z_t$), ACF($z_t^2$) |
+| `results/figures/brics_diag_BRL.png` | 2×2 diagnostic grid for BRL |
 | `results/figures/brics_diag_CNY.png` | 2×2 diagnostic grid for CNY |
 | `results/figures/brics_diag_INR.png` | 2×2 diagnostic grid for INR |
 | `results/figures/brics_diag_RUB.png` | 2×2 diagnostic grid for RUB |
@@ -343,7 +343,7 @@ cd brics-egarch-volatility
 pip install -r requirements.txt
 ```
 
-### 3a. Run the Full Pipeline (Recommended)
+### 3a. Run the Full Pipeline
 
 ```bash
 python src/analysis.py
@@ -357,20 +357,19 @@ Runs all nine steps end-to-end. FX and gold data are downloaded live from Yahoo 
 jupyter notebook notebooks/exploratory_analysis.ipynb
 ```
 
-Imports from the three `src/` modules and runs each step in a separate cell with inline outputs and plots. Recommended for exploration and for verifying individual steps.
+Imports from the three `src/` modules and runs each step in a separate cell with inline outputs and plots.
 
 ### 3c. Run Individual Modules
 
 ```bash
-python src/data_cleaning.py   # Step 1 only — downloads and saves raw data and returns
-python src/model.py           # Steps 1 + 3 — downloads data, fits EGARCH, prints parameters
+python src/data_cleaning.py  
+python src/model.py           
 ```
 
 ### Notes
 
-- The `data/raw/` and `data/processed/` files are generated at runtime by `data_cleaning.py`. They are included in the repository for reproducibility without requiring a live internet connection.
-- The `data/macro/` files are **static** — they do not require re-downloading and are used only by the macroeconomic vulnerability analysis (documented in the paper).
-- The `src/__pycache__/` directory contains compiled `.pyc` bytecode and can be safely ignored or deleted.
+- The `data/raw/` and `data/processed/` files are generated at runtime by `data_cleaning.py`.
+- The `data/raw/macroeconomic_parameters/` files are **static** — they do not require re-downloading and are used only by the macroeconomic vulnerability analysis.
 
 ---
 
@@ -386,19 +385,6 @@ matplotlib>=3.5.0
 scipy>=1.8.0
 ```
 
-Full version-pinned list is in `requirements.txt`. All packages are available via `pip`.
-
----
-
-## Citation
-
-If you use this code or derived results in your research, please cite:
-
-```
-Economics and Finance Association (2026).
-Volatility Analysis of a Potential BRICS Currency.
-EGARCH-Based Stability Ranking and Macroeconomic Vulnerability Assessment.
-GitHub: https://github.com/TanX4503/brics-egarch-volatility
-```
+All packages are available via `pip`.
 
 ---
