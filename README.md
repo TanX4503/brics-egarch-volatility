@@ -1,4 +1,4 @@
-# BRICS Currency Unit — EGARCH Volatility Analysis
+# Stability and Weight Optimization of a Potential BRICS Currency: An EGARCH-Based Volatility Analysis
 
 > **Research Paper:** *Stability and Weight Optimization of a Potential BRICS Currency: An EGARCH-Based Volatility Analysis*
 > **Model:** EGARCH(1,1) with Student-t errors · 
